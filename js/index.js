@@ -131,16 +131,13 @@ FastClick.attach(document.body);//这里加一个分号，要不会以为下面�
     })
     //解析歌词信息
     let arr = []
-    lyric.replace(
-      /\[(\d+)&#58;(\d+)&#46;(?:\d+)\]([^&#?]+)(?:&#10;)?/g,
-      (_, $1, $2, $3) => {
-        arr.push({
+    lyric.replace(/\[(\d+):(\d+).(?:\d+)\](.+)\n/g, (_, $1, $2, $3) => {
+      arr.push({
           minutes: $1,
           seconds: $2,
-          text: $3
-        })
-      }
-    )
+          text: $3.trim()
+      })
+  })
     //歌词绑定
     let str = ``
     arr.forEach(({ minutes, seconds, text }) => {
@@ -172,6 +169,7 @@ ${text}</p>`
     durationBox.innerHTML = duration//音乐总时长
     markImageBox.style.backgroundImage = `url(${pic})`
     audioBox.src = audio
+    
     //@3绑定歌词信息(这个麻烦，拿到的歌词有很多符号，需要分析歌词之后再绑定歌词)
     bindLyric(lyric)
 

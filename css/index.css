@@ -147,7 +147,7 @@ body,
   color: rgba(255, 255, 255, 0.5);
 }
 .main-box .wrapper p.active {
-  color: #31C27C;
+  color: #00BAFF;
   transition: color 0.3s;
 }
 /* 尾部区域样式 */
@@ -157,7 +157,7 @@ body,
 .footer-box .download {
   display: block;
   margin: 0 auto;
-  width: 2.13rem;
+  width: 2.15rem;
   height: 0.5rem;
   line-height: 0.5rem;
   text-align: center;
@@ -165,67 +165,7 @@ body,
   color: #fff;
   text-indent: 0.2rem;
   border-radius: 0.25rem;
-  background: url('../images/sprite_play.png') no-repeat #31C27C;
-  background-size: 0.4rem 3.5rem;
-  background-position: 0.1rem -2.915rem;
-}
-.footer-box .bar {
-  display: flex;
-  align-items: center;
-}
-.footer-box .bar .time {
-  width: 0.4rem;
-  line-height: 0.46rem;
-  text-align: center;
-  font-size: 0.12rem;
-  color: rgba(255, 255, 255, 0.5);
-}
-.footer-box .bar .progress {
-  position: relative;
-  flex-grow: 1;
-  height: 0.02rem;
-  background: rgba(255, 255, 255, 0.5);
-}
-.footer-box .bar .progress .already {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #31C27C;
-}
-/* 歌词区域样式 */
-.main-box .wrapper {
-  transform: translateY(0);
-  transition: transform 0.3s;
-}
-.main-box .wrapper p {
-  height: 0.5rem;
-  line-height: 0.5rem;
-  text-align: center;
-  font-size: 0.15rem;
-  color: rgba(255, 255, 255, 0.5);
-}
-.main-box .wrapper p.active {
-  color: #31C27C;
-  transition: color 0.3s;
-}
-/* 尾部区域样式 */
-.footer-box {
-  padding: 0 0.1rem;
-}
-.footer-box .download {
-  display: block;
-  margin: 0 auto;
-  width: 2.13rem;
-  height: 0.5rem;
-  line-height: 0.5rem;
-  text-align: center;
-  font-size: 0.18rem;
-  color: #fff;
-  text-indent: 0.2rem;
-  border-radius: 0.25rem;
-  background: url('../images/sprite_play.png') no-repeat #31C27C;
+  background: #00BAFF;
   background-size: 0.4rem 3.5rem;
   background-position: 0.1rem -2.915rem;
 }
